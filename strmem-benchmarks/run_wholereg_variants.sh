@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 libdir=../../sifive-libc
-vardir=../../whole-memcpys
+vardir=./whole-memcpys
 
 HASH1="6528013b5f5ba6bb3934b7f5fe57a3110680530f"
 HASH2="db95037b428e28b084ce550872406da9ba4217bf"
