@@ -35,7 +35,7 @@ ENTRY(memcpy)
 	// Do we have enough to copy in 1 register?
 L(cpy_loop):
 	ble	a2, zero, L(all_done)
-	vl1r64.v v0, (a1)		// Load bytes
+	vl1re64.v v0, (a1)		// Load bytes
 	add	a1, a1, t2		// Increment src byte pointer
 	sub	a2, a2, t2		// Decrement byte count
 	vs1r.v	v0, (a3)		// Store bytes
